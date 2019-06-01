@@ -41,7 +41,7 @@ end
   end
   
  def self.alphabetical
-   @@all.each {|song|song.sort }
+   @@all.each {|song|song.name.sort }
   
 end
  
