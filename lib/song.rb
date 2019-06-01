@@ -46,7 +46,11 @@ end
 
 def self.new_from_filename (filename)
   file = filename.split ("-")
-
+  artist = file[0]
+  title = file[1].gusb(".mp3")
+  song = new_by_name(title)
+  song.artist_name = artist
+  song
 
 end
   
